@@ -50,7 +50,7 @@
 
 <!-- ========== MAIN CONTENT ========== -->
 <!-- Breadcrumb -->
-<div class="sticky top-0 inset-x-0 z-20 bg-white border-y px-4 sm:px-6 md:px-8 lg:hidden dark:bg-neutral-800 dark:border-neutral-700">
+<div class="sticky top-0 inset-x-0 z-20 bg-white border-y px-4 sm:px-6 md:px-8 lg:hidden dark:bg-black dark:border-neutral-700">
   <div class="flex justify-between items-center py-2">
     <!-- Breadcrumb -->
     <ol class="ms-3 flex items-center whitespace-nowrap">
@@ -84,18 +84,18 @@
   fixed inset-y-0 start-0 z-[60]
   bg-white border-e border-gray-200
    lg:translate-x-0 lg:end-auto lg:bottom-0
-  dark:bg-neutral-800 dark:border-neutral-700
+  dark:bg-black dark:border-neutral-700
  ">
   <div class="px-8 pt-4">
     <!-- Logo -->
-    <a class="flex-none rounded-xl text-2xl  font-bold focus:outline-none focus:opacity-80" href="../templates/admin/index.html" aria-label="Guild">
+    <a class="flex-none rounded-xl text-2xl  font-bold focus:outline-none focus:opacity-80 dark:text-white" href="../templates/admin/index.html" aria-label="Guild">
         Guild
       </a>
     <!-- End Logo -->
   </div>
 
   <NavItems />
-  <PreviewTopUsers />
+  
 </div>
 </header>
 <!-- End Sidebar -->
