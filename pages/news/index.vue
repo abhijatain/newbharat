@@ -1,7 +1,7 @@
 <template>
     <div class=" container mx-auto flex flex-col gap-4 lg:gap-8 md:p-6 ">
         <TopHeader />
-        <div v-for="article in articles" class="flex flex-col  bg-white   rounded-lg shadow lg:flex-row lg:mx-3 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:hover:bg-gray-700 ">
+        <div v-for="article in articles" class="flex flex-col border-b bg-white    lg:flex-row lg:mx-3 md:hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:md:hover:bg-gray-700 ">
 
         <iframe class="object-cover w-full rounded-lg h-40 md:h-60 lg:h-full lg:w-[30%]"  :src="article.youtube" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div class="flex flex-col gap-4 p-2 leading-normal">
@@ -31,7 +31,8 @@
                 </div>
             </div>
         </div>
-        </div>
+        
+    </div>
         
     </div>
 </template>
