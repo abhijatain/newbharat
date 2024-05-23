@@ -25,7 +25,7 @@ export default {
 
             // Colors
             {
-                'bg-surface-0 dark:bg-surface-900 ': !props.modelValue,
+                'bg-surface-0 dark:bg-black ': !props.modelValue,
                 'border-surface-200 dark:border-surface-700 ': !props.modelValue && !props.invalid,
                 'text-surface-700 dark:text-white/80': !props.modelValue,
                 'bg-primary-500 dark:bg-primary-400 border-primary-500 dark:border-primary-400 text-white dark:text-surface-900': props.modelValue

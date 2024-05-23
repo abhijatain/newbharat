@@ -29,7 +29,7 @@ export default {
             'ring-1',
             { 'ring-surface-200 dark:ring-surface-700': !props.invalid },
             {
-                'bg-surface-0 dark:bg-surface-900 ': !props.modelValue,
+                'bg-surface-0 dark:bg-black ': !props.modelValue,
                 'bg-surface-100 dark:bg-surface-700': props.modelValue
             },
 

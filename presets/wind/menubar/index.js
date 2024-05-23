@@ -17,7 +17,7 @@ export default {
             'shadow-md',
 
             // Color
-            'bg-surface-0 dark:bg-surface-900',
+            'bg-surface-0 dark:bg-black',
             'ring-1 ring-inset ring-surface-100 dark:ring-surface-800 ring-offset-0'
         ]
     },
@@ -49,7 +49,7 @@ export default {
             'sm:rounded-none rounded-md',
 
             // Color
-            'bg-surface-0 dark:bg-surface-900 sm:bg-transparent dark:sm:bg-transparent',
+            'bg-surface-0 dark:bg-black sm:bg-transparent dark:sm:bg-transparent',
 
             // Misc
             'outline-none'
@@ -142,7 +142,7 @@ export default {
             { 'sm:absolute sm:left-full sm:top-0': props.level > 1 },
 
             // Color
-            'bg-surface-0 dark:bg-surface-900'
+            'bg-surface-0 dark:bg-black'
         ]
     }),
     separator: {

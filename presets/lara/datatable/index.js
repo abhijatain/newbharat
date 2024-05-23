@@ -246,7 +246,7 @@ export default {
                     'rounded-md',
 
                     // Color and Background
-                    'bg-surface-0 dark:bg-surface-900',
+                    'bg-surface-0 dark:bg-black',
                     'border border-surface-300 dark:border-surface-700',
                     'text-surface-800 dark:text-white/80',
                     'placeholder:text-surface-400 dark:placeholder:text-surface-500',
@@ -333,7 +333,7 @@ export default {
                     'rounded-md',
 
                     // Color and Background
-                    'bg-surface-0 dark:bg-surface-900',
+                    'bg-surface-0 dark:bg-black',
                     'border border-surface-300 dark:border-surface-700',
 
                     // Transitions
@@ -831,7 +831,7 @@ export default {
                     // Colors
                     {
                         'text-surface-700 dark:text-white/80': !props.modelValue,
-                        'bg-surface-0 dark:bg-surface-900': !props.modelValue,
+                        'bg-surface-0 dark:bg-black': !props.modelValue,
                         'border-surface-300 dark:border-surface-700': !props.modelValue,
                         'border-primary-500 dark:border-primary-400': props.modelValue,
                         'bg-primary-500 dark:bg-primary-400': props.modelValue
@@ -885,7 +885,7 @@ export default {
                     'w-[0.857rem] h-[0.857rem]',
 
                     // Colors
-                    'bg-surface-0 dark:bg-surface-900',
+                    'bg-surface-0 dark:bg-black',
 
                     // Conditions
                     {
@@ -933,7 +933,7 @@ export default {
 
                     // Colors
                     {
-                        'border-surface-200 bg-surface-0 dark:border-surface-700 dark:bg-surface-900': !context.checked,
+                        'border-surface-200 bg-surface-0 dark:border-surface-700 dark:bg-black': !context.checked,
                         'border-primary-500 bg-primary-500 dark:border-primary-400 dark:bg-primary-400': context.checked
                     },
 
@@ -1031,7 +1031,7 @@ export default {
 
                     // Colors
                     {
-                        'border-surface-200 bg-surface-0 dark:border-surface-700 dark:bg-surface-900': !context.checked,
+                        'border-surface-200 bg-surface-0 dark:border-surface-700 dark:bg-black': !context.checked,
                         'border-primary-500 bg-primary-500 dark:border-primary-400 dark:bg-primary-400': context.checked
                     },
 

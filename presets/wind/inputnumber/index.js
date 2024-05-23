@@ -41,7 +41,7 @@ export default {
                 // Colors
                 'text-surface-900 dark:text-surface-0',
                 'placeholder:text-surface-400 dark:placeholder:text-surface-500',
-                'bg-surface-0 dark:bg-surface-900',
+                'bg-surface-0 dark:bg-black',
                 { 'border-r': parent.props.showButtons && parent.props.buttonLayout == 'stacked' },
                 { 'border-x': parent.props.showButtons && parent.props.buttonLayout == 'horizontal' },
                 { 'border-y': parent.props.showButtons && parent.props.buttonLayout == 'vertical' },

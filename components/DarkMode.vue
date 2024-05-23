@@ -8,16 +8,12 @@
 </template>
 
 <script setup>
-const isDark = useDark({
-  selector: 'html',
-  attribute: 'class',
-  valueDark: 'dark',
-  valueLight: 'light',
-})
+const isDark = useDark()
 const toggleDark = useToggle(isDark)
 
 const toggleDarkMode = () => {
     document.documentElement.classList.toggle('dark');
+    isDark = !isDark
 }
 </script>
 

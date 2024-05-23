@@ -9,7 +9,7 @@ export default {
             'rounded-md',
 
             // Color and Background
-            'bg-surface-0 dark:bg-surface-900',
+            'bg-surface-0 dark:bg-black',
             'border',
             { 'border-surface-300 dark:border-surface-600': !props.invalid },
 
@@ -200,7 +200,7 @@ export default {
 
                 // Colors
                 {
-                    'border-surface-200 bg-surface-0 dark:border-surface-700 dark:bg-surface-900': !context.checked,
+                    'border-surface-200 bg-surface-0 dark:border-surface-700 dark:bg-black': !context.checked,
                     'border-primary-500 bg-primary-500 dark:border-primary-400 dark:bg-primary-400': context.checked
                 },
 
@@ -301,7 +301,7 @@ export default {
 
                 // Colors
                 {
-                    'border-surface-200 bg-surface-0 dark:border-surface-700 dark:bg-surface-900': !context.checked,
+                    'border-surface-200 bg-surface-0 dark:border-surface-700 dark:bg-black': !context.checked,
                     'border-primary-500 bg-primary-500 dark:border-primary-400 dark:bg-primary-400': context.checked
                 },
 
@@ -463,7 +463,7 @@ export default {
 
             // Color
             'text-surface-800 dark:text-white/80',
-            'bg-surface-0 dark:bg-surface-600/80',
+            'bg-surface-0 dark:bg-black',
 
             // Misc
             'cursor-auto'
@@ -485,9 +485,9 @@ export default {
 
             //Color
             'text-surface-700 dark:text-white/80',
-            'bg-surface-0 dark:bg-surface-900',
+            'bg-surface-0 dark:bg-black',
             'border-surface-200 dark:border-surface-700',
-            'placeholder:text-surface-400 dark:placeholder:text-surface-500',
+            'placeholder:text-surface-400 dark:placeholder:text-white',
 
             // Shape
             'border',

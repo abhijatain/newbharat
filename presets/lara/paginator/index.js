@@ -188,7 +188,7 @@ export default {
                 'mx-2',
 
                 // Color and Background
-                'bg-surface-0 dark:bg-surface-900',
+                'bg-surface-0 dark:bg-black',
                 'border border-surface-300 dark:border-surface-700',
 
                 // Transitions
@@ -346,7 +346,7 @@ export default {
                     // Colors
                     'text-surface-600 dark:text-surface-200',
                     'placeholder:text-surface-400 dark:placeholder:text-surface-500',
-                    'bg-surface-0 dark:bg-surface-900',
+                    'bg-surface-0 dark:bg-black',
                     'border border-surface-300 dark:border-surface-600',
 
                     // Sizing and Spacing
@@ -386,7 +386,7 @@ export default {
                 'rounded-md',
 
                 // Color and Background
-                'bg-surface-0 dark:bg-surface-900',
+                'bg-surface-0 dark:bg-black',
                 'border border-surface-300 dark:border-surface-700',
 
                 // Transitions

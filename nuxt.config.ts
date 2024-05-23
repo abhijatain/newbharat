@@ -2,7 +2,6 @@
 import path from 'path'
 
 export default defineNuxtConfig({
-  ssr: false,
   router:{
     linkExactActiveClass: 'active'
   },

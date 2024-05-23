@@ -27,7 +27,7 @@ export default {
 
             // Color
             'text-surface-900 dark:text-surface-0',
-            'bg-surface-0 dark:bg-surface-900',
+            'bg-surface-0 dark:bg-black',
             'placeholder:text-surface-400 dark:placeholder:text-surface-500',
             'shadow-sm',
 

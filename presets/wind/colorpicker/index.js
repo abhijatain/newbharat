@@ -21,7 +21,7 @@ export default {
             'rounded-lg w-8 h-8',
 
             // Colors
-            'bg-surface-0 dark:bg-surface-900',
+            'bg-surface-0 dark:bg-black',
             'border border-surface-300 dark:border-surface-700',
 
             // States

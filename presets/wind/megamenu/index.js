@@ -14,7 +14,7 @@ export default {
             'shadow-md',
 
             // Color
-            'bg-surface-0 dark:bg-surface-900',
+            'bg-surface-0 dark:bg-black',
             'ring-1 ring-inset ring-surface-100 dark:ring-surface-800 ring-offset-0',
 
             { 'items-center px-2 sm:px-6': props.orientation == 'horizontal', 'flex-col justify-center sm:justify-start sm:w-48 px-2': props.orientation !== 'horizontal' }
@@ -48,7 +48,7 @@ export default {
             'sm:rounded-none rounded-md',
 
             // Color
-            'bg-surface-0 dark:bg-surface-900 sm:bg-transparent dark:sm:bg-transparent',
+            'bg-surface-0 dark:bg-black sm:bg-transparent dark:sm:bg-transparent',
 
             // Misc
             'outline-none'
@@ -135,7 +135,7 @@ export default {
             'border-0',
 
             // Color
-            'bg-surface-0 dark:bg-surface-900',
+            'bg-surface-0 dark:bg-black',
 
             // Position
             'static sm:absolute',
@@ -168,7 +168,7 @@ export default {
 
             // Color
             'text-surface-700 dark:text-white/80',
-            'bg-surface-0 dark:bg-surface-900'
+            'bg-surface-0 dark:bg-black'
         ]
     },
     separator: {

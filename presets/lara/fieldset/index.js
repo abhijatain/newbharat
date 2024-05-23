@@ -11,7 +11,7 @@ export default {
             'rounded-md',
             // Color
             'border border-surface-200 dark:border-surface-700',
-            'bg-surface-0 dark:bg-surface-900',
+            'bg-surface-0 dark:bg-black',
             'text-surface-700 dark:text-surface-0/80'
         ]
     },
@@ -30,7 +30,7 @@ export default {
             // Color
             'text-surface-700 dark:text-surface-0/80',
             'border border-surface-200 dark:border-surface-700',
-            'bg-surface-50 dark:bg-surface-900',
+            'bg-surface-50 dark:bg-black',
 
             // Transition
             'transition-none',

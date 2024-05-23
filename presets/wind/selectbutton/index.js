@@ -23,7 +23,7 @@ export default {
 
             // Color
             {
-                'bg-surface-0 dark:bg-surface-900': !context.active,
+                'bg-surface-0 dark:bg-black': !context.active,
                 'text-surface-700 dark:text-white/80': !context.active,
                 'bg-surface-100 dark:bg-surface-700': context.active
             },

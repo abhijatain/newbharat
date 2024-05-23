@@ -39,7 +39,7 @@ export default {
 
             // Color
             'text-surface-900 dark:text-surface-0',
-            'bg-surface-0 dark:bg-surface-900',
+            'bg-surface-0 dark:bg-black',
             'placeholder:text-surface-400 dark:placeholder:text-surface-500',
             'shadow-sm',
 
@@ -84,7 +84,7 @@ export default {
             'text-surface-700 dark:text-white/80',
             'border',
             {
-                'bg-surface-0 dark:bg-surface-900': !props.multiple,
+                'bg-surface-0 dark:bg-black': !props.multiple,
                 'border-surface-300 dark:border-surface-700': !props.multiple && !props.invalid,
                 'border-0 bg-transparent': props.multiple
             },

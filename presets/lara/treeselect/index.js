@@ -9,7 +9,7 @@ export default {
             'rounded-md',
 
             // Color and Background
-            'bg-surface-0 dark:bg-surface-900',
+            'bg-surface-0 dark:bg-black',
             'border',
             { 'border-surface-300 dark:border-surface-600': !props.invalid },
 
@@ -210,7 +210,7 @@ export default {
 
                     // Colors
                     {
-                        'border-surface-200 bg-surface-0 dark:border-surface-700 dark:bg-surface-900': !context.checked,
+                        'border-surface-200 bg-surface-0 dark:border-surface-700 dark:bg-black': !context.checked,
                         'border-primary-500 bg-primary-500 dark:border-primary-400 dark:bg-primary-400': context.checked
                     },
 
@@ -318,7 +318,7 @@ export default {
                 // Colors
                 'text-surface-600 dark:text-surface-200',
                 'placeholder:text-surface-400 dark:placeholder:text-surface-500',
-                'bg-surface-0 dark:bg-surface-900',
+                'bg-surface-0 dark:bg-black',
                 'border border-surface-300 dark:border-surface-600',
 
                 // States

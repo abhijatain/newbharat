@@ -10,7 +10,7 @@ export default {
             'shadow-sm',
 
             // Color and Background
-            'bg-surface-0 dark:bg-surface-900',
+            'bg-surface-0 dark:bg-black',
 
             // States
             { 'ring-1 ring-inset': !state.focused, 'ring-2 ring-inset ring-primary-500 dark:ring-primary-400': state.focused },
@@ -224,7 +224,7 @@ export default {
                     // Colors
                     'text-surface-600',
                     {
-                        'border-surface-300 bg-surface-0 dark:border-surface-700 dark:bg-surface-900': !context.checked,
+                        'border-surface-300 bg-surface-0 dark:border-surface-700 dark:bg-black': !context.checked,
                         'border-primary-500 bg-primary-500 dark:border-primary-400 dark:bg-primary-400': context.checked
                     },
 
@@ -340,7 +340,7 @@ export default {
                 // Colors
                 'text-surface-900 dark:text-surface-0',
                 'placeholder:text-surface-400 dark:placeholder:text-surface-500',
-                'bg-surface-0 dark:bg-surface-900',
+                'bg-surface-0 dark:bg-black',
                 'ring-1 ring-inset ring-surface-300 dark:ring-surface-700 ring-offset-0',
 
                 // States

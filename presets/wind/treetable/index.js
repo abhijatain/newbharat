@@ -360,7 +360,7 @@ export default {
                     // Colors
                     'text-surface-600',
                     {
-                        'border-surface-300 bg-surface-0 dark:border-surface-700 dark:bg-surface-900': !context.checked,
+                        'border-surface-300 bg-surface-0 dark:border-surface-700 dark:bg-black': !context.checked,
                         'border-primary-500 bg-primary-500 dark:border-primary-400 dark:bg-primary-400': context.checked
                     },
 

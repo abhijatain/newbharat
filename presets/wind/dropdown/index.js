@@ -10,7 +10,7 @@ export default {
             'shadow-sm',
 
             // Color and Background
-            'bg-surface-0 dark:bg-surface-900',
+            'bg-surface-0 dark:bg-black',
 
             // States
             { 'ring-1 ring-inset': !state.focused, 'ring-2 ring-inset ring-primary-500 dark:ring-primary-400': state.focused },
@@ -217,7 +217,7 @@ export default {
 
             //Color
             'text-surface-700 dark:text-white/80',
-            'bg-surface-0 dark:bg-surface-900',
+            'bg-surface-0 dark:bg-black',
             'placeholder:text-surface-400',
             'ring-1 ring-inset ring-surface-300 dark:ring-surface-700',
 
