@@ -27,7 +27,9 @@
           <input type="text" id="icon" name="icon" class="py-2 px-4 ps-11 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="Search">
         </div>
       </div>
-
+      <MultiSelect v-model="selectedCities" :options="cities" filter optionLabel="name" placeholder="Select Countries"
+    :maxSelectedLabels="4" class="w-full md:w-[20rem] hidden lg:flex" />
+     
       <div class="flex flex-row items-center justify-end gap-2">
         <button type="button" class="w-[2.375rem] h-[2.375rem] inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-neutral-700">
           <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
@@ -53,7 +55,9 @@
 <!-- Breadcrumb -->
 <div class="sticky top-0 inset-x-0 z-20 bg-white border-y px-4 sm:px-6 md:px-8 lg:hidden dark:bg-black dark:border-neutral-700">
   <div class="flex justify-between items-center py-2">
-    <!-- Breadcrumb -->
+    <MultiSelect v-model="selectedCities" :options="cities" filter optionLabel="name" placeholder="Select Countries"
+    :maxSelectedLabels="4" class="w-full md:w-[30rem]" />
+    <!-- Breadcrumb 
     <ol class="ms-3 flex items-center whitespace-nowrap">
       <li class="flex items-center text-sm text-gray-800 dark:text-neutral-400">
         Home
@@ -65,7 +69,7 @@
         Discussions
       </li>
     </ol>
-    <!-- End Breadcrumb -->
+     -->
 
     <!-- Sidebar -->
     <SidebarSmall class="lg:hidden"/>  
@@ -84,4 +88,13 @@
 
 <script setup>
 let open = ref(false)
+
+const selectedCities = ref();
+const cities = ref([
+    { name: 'USA', code: 'NY' },
+    { name: 'Canada', code: 'RM' },
+    { name: 'Russia', code: 'LDN' },
+    { name: 'Australia', code: 'IST' },
+    { name: 'England', code: 'PRS' }
+]);
 </script>
