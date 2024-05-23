@@ -2,8 +2,8 @@
     <div class=" container mx-auto flex flex-col gap-4 lg:gap-8 md:p-6 ">
         <TopHeader />
         <div v-for="article in articles" class="flex flex-col border-b bg-white    lg:flex-row lg:mx-3  dark:border-gray-700 dark:bg-black  ">
-
-        <iframe class="object-cover w-full rounded-lg h-40 md:h-60 lg:h-full lg:w-[30%]"  :src="article.youtube" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <img class="object-cover w-full rounded-lg h-40 md:h-60 lg:h-full lg:w-[30%]" v-if="isImageLink(article.youtube)" :src="article.youtube" >
+        <iframe v-else class="object-cover w-full rounded-lg h-40 md:h-60 lg:h-full lg:w-[30%]"  :src="article.youtube" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div class="flex flex-col gap-4 p-2 leading-normal">
             
             <h5 class=" text-xl items-center font-bold tracking-tight text-gray-900 dark:text-white">
@@ -38,5 +38,10 @@
 </template>
 
 <script setup>
+
+function isImageLink(url) {
+    return /\.(jpeg|jpg|gif|png)$/.test(url)
+}
+
 const { data: articles } = await useLazyFetch('https://test-am3oxfhvvq-em.a.run.app/api/article/all')
 </script>
