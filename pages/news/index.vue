@@ -1,14 +1,35 @@
 <template>
     <div class=" container mx-auto flex flex-col gap-4 lg:gap-8 md:p-6 ">
         <TopHeader />
-        <div v-for="article in articles" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow lg:flex-row lg:mx-3 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:hover:bg-gray-700 ">
+        <div v-for="article in articles" class="flex flex-col  bg-white   rounded-lg shadow lg:flex-row lg:mx-3 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:hover:bg-gray-700 ">
 
-        <iframe class="object-cover w-full rounded-lg h-60 lg:h-full lg:w-[30%]"  :src="article.youtube" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <div class="flex flex-col justify-between p-4 leading-normal">
-            <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
-                {{article.title}}
+        <iframe class="object-cover w-full rounded-lg h-40 md:h-60 lg:h-full lg:w-[30%]"  :src="article.youtube" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="flex flex-col gap-4 p-2 leading-normal">
+            
+            <h5 class=" text-xl items-center font-bold tracking-tight text-gray-900 dark:text-white">
+                {{article.title}}.{{ article.title }}
             </h5>
+     <div>
+
+<span class="bg-red-100 text-red-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">Canada</span>
+<span class="bg-green-100 text-green-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Sports</span>
+<span class="bg-yellow-100 text-yellow-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">Football</span>
+<span class="bg-indigo-100 text-indigo-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-indigo-900 dark:text-indigo-300">Indigo</span>
+
+</div>
+            <!--
             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 p-2">{{article.summary}}</p>
+            -->
+            <div class="flex flex-row justify-between text-sm dark:text-white">
+                <div class="my-auto">
+                    <p >Tribune . 14 hrs</p>
+                </div>
+                <div>
+                    <Button icon="pi pi-heart" severity="secondary" text rounded aria-label="Like" />
+                    <Button icon="pi pi-bookmark" severity="secondary" text rounded aria-label="Bookmark" />
+                    <Button icon="pi pi-share-alt" severity="secondary" text rounded aria-label="Favorite" />
+                </div>
+            </div>
         </div>
         </div>
         

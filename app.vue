@@ -9,6 +9,8 @@
 <style>
 @import url('~/assets/base.css');
 
+@import 'primeicons/primeicons.css';
+
 .page-enter-active,
 .page-leave-active {
   transition: all 0.4s;

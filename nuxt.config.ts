@@ -11,8 +11,17 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   modules: [
-    '@nuxtjs/tailwindcss','@vueuse/nuxt'
+    '@nuxtjs/tailwindcss','@vueuse/nuxt','nuxt-primevue'
   ],
+  primevue: {
+    options: {
+      unstyled: true
+    },
+    importPT: { from: path.resolve(__dirname, './presets/lara/') },
+    components:{
+      exclude:["Editor","Chart"]
+    }
+},
   tailwindcss: {
     config: {
       darkMode: "class",

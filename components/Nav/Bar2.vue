@@ -4,8 +4,9 @@
   <nav class="flex basis-full items-center w-full mx-auto px-4 sm:px-6 sm:py-2 justify-between lg:container gap-4" aria-label="Global">
     <div class="me-5 lg:me-0 ">
       <!-- Logo -->
+      
       <a class="flex-none rounded-xl text-2xl  font-bold focus:outline-none focus:opacity-80 dark:text-white" href="../templates/admin/index.html" aria-label="Guild">
-        Guild
+         Guild
       </a>
       <!-- End Logo -->
     </div>
@@ -67,48 +68,17 @@
     <!-- End Breadcrumb -->
 
     <!-- Sidebar -->
-    <button @click="open = !open" type="button" class="py-2 px-3 flex justify-center items-center gap-x-1.5 text-xs rounded-lg border border-gray-200 text-gray-500 hover:text-gray-600 dark:border-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200" data-hs-overlay="#application-sidebar" aria-controls="application-sidebar" aria-label="Sidebar">
-      <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8L21 12L17 16M3 12H13M3 6H13M3 18H13"/></svg>
-      <span class="sr-only">Sidebar</span>
-    </button>
+    <SidebarSmall class="lg:hidden"/>  
     <!-- End Sidebar -->
   </div>
 </div>
 <!-- End Breadcrumb -->
 
 <!-- Sidebar -->
-<div v-if="open" id="application-sidebar" class="hs-overlay [--auto-close:lg] 
-  hs-overlay-open:translate-x-0-translate-x-full transition-all duration-300 transform
-  w-[260px]
-  lg:hidden
-  fixed inset-y-0 start-0 z-[60]
-  bg-white border-e border-gray-200
-   lg:translate-x-0 lg:end-auto lg:bottom-0
-  dark:bg-black dark:border-neutral-700
- ">
-  <div class="px-8 pt-4">
-    <!-- Logo -->
-    <a class="flex-none rounded-xl text-2xl  font-bold focus:outline-none focus:opacity-80 dark:text-white" href="../templates/admin/index.html" aria-label="Guild">
-        Guild
-      </a>
-    <!-- End Logo -->
-  </div>
 
-  <NavItems />
-  
-</div>
 </header>
 <!-- End Sidebar -->
-<div class="hs-overlay [--auto-close:lg] 
-  hs-overlay-open:translate-x-0
-  -translate-x-full transition-all duration-300 transform
-  w-[260px]
-  md:hidden
-  fixed inset-y-0 start-0 z-[60]
-  bg-white border-e border-gray-200
-   lg:translate-x-0 lg:end-auto lg:bottom-0
-  dark:bg-neutral-800 dark:border-neutral-700
- "></div>
+
 
 </template>
 
