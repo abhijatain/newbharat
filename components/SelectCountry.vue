@@ -1,9 +1,9 @@
 <template>
     <div class="card flex justify-center">
-        <Dropdown v-model="selectedCountry" :options="countries" filter optionLabel="name" placeholder="Select a Country" class="w-full md:w-[14rem]" >
+        <Dropdown v-model="selectedCountry" :options="countries" filter optionLabel="name" placeholder="Select a Country" class="w-full md:w-[14rem]" :virtualScrollerOptions="{ itemSize: 50 }">
             <template #value="slotProps">
                 <div v-if="slotProps.value" class="flex items-center">
-                    <img :alt="slotProps.value.label" :src="slotProps.value.flag" class="mr-2 flag " style="width: 25px; height: 16.4px" />
+                    <img :alt="slotProps.value.label" :src="slotProps.value.flag" class="mr-2 flag " style="width: 30px; height: 18.4px" />
                     <div>{{ slotProps.value.name }}</div>
                 </div>
                 <span v-else>
@@ -13,7 +13,7 @@
             <template #option="slotProps">
                 <div class="flex items-center">
                     
-                    <img :alt="slotProps.option.label" :src="slotProps.option.flag" :class="`mr-2 flag flag-${slotProps.option.code.toLowerCase()}`" style="width: 25px; height: 16.4px" />
+                    <img :alt="slotProps.option.label" :src="slotProps.option.flag" :class="`mr-2 flag flag-${slotProps.option.code.toLowerCase()}`" style="width: 30px; height: 18.4px" />
                     <div>{{ slotProps.option.name }}</div>
                 </div>
             </template>
@@ -23,66 +23,17 @@
 
 <script setup>
 const selectedCountry = ref();
-const countries = ref([
-{
-		flag: "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1e8.svg",
-		name: "Ascension Island",
-		code: "ac"
-	},
-	{
-		flag: "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1e9.svg",
-		name: "Andorra",
-		code: "ad"
-	},
+const countries =  ref([
+	
 	{
 		flag: "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1ea.svg",
 		name: "United Arab Emirates",
 		code: "ae"
 	},
 	{
-		flag: "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1eb.svg",
-		name: "Afghanistan",
-		code: "af"
-	},
-	{
-		flag: "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1ec.svg",
-		name: "Antigua & Barbuda",
-		code: "ag"
-	},
-	{
-		flag: "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1ee.svg",
-		name: "Anguilla",
-		code: "ai"
-	},
-	{
-		flag: "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1f1.svg",
-		name: "Albania",
-		code: "al"
-	},
-	{
-		flag: "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1f2.svg",
-		name: "Armenia",
-		code: "am"
-	},
-	{
-		flag: "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1f4.svg",
-		name: "Angola",
-		code: "ad"
-	},
-	{
-		flag: "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1f6.svg",
-		name: "Antarctica",
-		code: "aq"
-	},
-	{
 		flag: "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1f7.svg",
 		name: "Argentina",
 		code: "ar"
-	},
-	{
-		flag: "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1f8.svg",
-		name: "American Samoa",
-		code: "as"
 	},
 	{
 		flag: "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1f9.svg",
@@ -94,57 +45,168 @@ const countries = ref([
 		name: "Australia",
 		code: "au"
 	},
+
 	{
-		flag: "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1fc.svg",
-		name: "Aruba",
-		code: "aw"
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1e6.svg",
+		name: "Canada",
+		code: "ca"
 	},
 	{
-		flag: "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1fd.svg",
-		name: "Åland Islands",
-		code: "ax"
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1ed.svg",
+		name: "Switzerland",
+		code: "ch"
+	},
+
+	{
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1f3.svg",
+		name: "China",
+		code: "cn"
+	},
+
+	{
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1e9-1f1ea.svg",
+		name: "Germany",
+		code: "de"
 	},
 	{
-		flag: "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1ff.svg",
-		name: "Azerbaijan",
-		code: "az"
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1e9-1f1f0.svg",
+		name: "Denmark",
+		code: "dk"
 	},
 	{
-		flag: "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1e6.svg",
-		name: "Bosnia & Herzegovina",
-		code: "ba"
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1ea-1f1f8.svg",
+		name: "Spain",
+		code: "es"
+	},
+	
+	{
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1eb-1f1f7.svg",
+		name: "France",
+		code: "fr"
+	},
+
+	{
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1ea.svg",
+		name: "Ireland",
+		code: "ie"
 	},
 	{
-		flag: "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1e7.svg",
-		name: "Barbados",
-		code: "bb"
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1f1.svg",
+		name: "Israel",
+		code: "il"
 	},
 	{
-		flag: "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1e9.svg",
-		name: "Bangladesh",
-		code: "bd"
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1f3.svg",
+		name: "India",
+		code: "in"
 	},
 	{
-		flag: "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1ea.svg",
-		name: "Belgium",
-		code: "be"
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1f6.svg",
+		name: "Iraq",
+		code: "iq"
 	},
 	{
-		flag: "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1eb.svg",
-		name: "Burkina Faso",
-		code: "bf"
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1f7.svg",
+		name: "Iran"
+	},
+
+	{
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1f9.svg",
+		name: "Italy",
+		code: "it"
 	},
 	{
-		flag: "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1ec.svg",
-		name: "Bulgaria",
-		code: "bg"
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1ef-1f1f5.svg",
+		name: "Japan",
+		code: "jp"
 	},
 	{
-		flag: "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1ed.svg",
-		name: "Bahrain",
-		code: "bh"
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1f0-1f1f5.svg",
+		name: "North Korea",
+		code: "kp"
 	},
-]);
+	{
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1f0-1f1f7.svg",
+		name: "South Korea",
+		code: "kr"
+	},
+	{
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1f0-1f1fc.svg",
+		name: "Kuwait",
+		code: "kw"
+	},
+
+	{
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1fa.svg",
+		name: "Mauritius",
+		code: "mu"
+	},
+
+
+	
+	{
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1f3-1f1ff.svg",
+		name: "New Zealand",
+		code: "nz"
+	},
+	{
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1f0.svg",
+		name: "Pakistan",
+		code: "pk"
+	},
+	{
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1f6-1f1e6.svg",
+		name: "Qatar",
+		code: "qa"
+	},
+	{
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1f7-1f1fa.svg",
+		name: "Russia",
+		code: "ru"
+	},
+	{
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1e6.svg",
+		name: "Saudi Arabia",
+		code: "sa"
+	},
+	{
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1ec.svg",
+		name: "Singapore",
+		code: "sg"
+	},
+	{
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1f7.svg",
+		name: "Turkey",
+		code: "tr"
+	},
+	{
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1fa-1f1e6.svg",
+		name: "Ukraine",
+		code: "ua"
+	},
+	{
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1fa-1f1f8.svg",
+		name: "United States",
+		code: "us"
+	},
+	{
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1fe-1f1ea.svg",
+		name: "Yemen",
+		code: "ye"
+	},
+	{
+		flag: "https://twemoji.maxcdn.com/2/svg/1f1ff-1f1e6.svg",
+		name: "South Africa",
+		code: "za"
+	},
+	
+	{
+		flag: "https://twemoji.maxcdn.com/2/svg/1f3f4-e0067-e0062-e0065-e006e-e0067-e007f.svg",
+		name: "England",
+		code: "uk"
+	},
+
+])
 const countries2 = ref([
 	{
 		flag: "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1e8.svg",
