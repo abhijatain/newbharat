@@ -55,8 +55,7 @@
 <!-- Breadcrumb -->
 <div class="sticky top-0 inset-x-0 z-20 bg-white border-y px-4 sm:px-6 md:px-8 lg:hidden dark:bg-black dark:border-neutral-700">
   <div class="flex justify-between items-center py-2">
-    <MultiSelect v-model="selectedCities" :options="cities" filter optionLabel="name" placeholder="Select Countries"
-    :maxSelectedLabels="4" class="w-full md:w-[30rem]" />
+    <SelectCountry class="w-full md:w-[30rem]" />
     <!-- Breadcrumb 
     <ol class="ms-3 flex items-center whitespace-nowrap">
       <li class="flex items-center text-sm text-gray-800 dark:text-neutral-400">
@@ -86,15 +85,3 @@
 
 </template>
 
-<script setup>
-let open = ref(false)
-
-const selectedCities = ref();
-const cities = ref([
-    { name: 'USA', code: 'NY' },
-    { name: 'Canada', code: 'RM' },
-    { name: 'Russia', code: 'LDN' },
-    { name: 'Australia', code: 'IST' },
-    { name: 'England', code: 'PRS' }
-]);
-</script>
