@@ -1,6 +1,6 @@
 <template>
-    <div class="card flex justify-center">
-        <Dropdown v-model="selectedCountry" :options="countries" filter optionLabel="name" placeholder="Select a Country" class="w-full md:w-[14rem]" :virtualScrollerOptions="{ itemSize: 50 }">
+    <div class="card flex ">
+        <Dropdown v-model="selectedCountry" :options="countries" filter optionLabel="name" placeholder="Select a Country" class="w-full md:w-[14rem]" :virtualScrollerOptions="{ itemSize: 34 }">
             <template #value="slotProps">
                 <div v-if="slotProps.value" class="flex items-center">
                     <img :alt="slotProps.value.label" :src="slotProps.value.flag" class="mr-2 flag " style="width: 30px; height: 18.4px" />
