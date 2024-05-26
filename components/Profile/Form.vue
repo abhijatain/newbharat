@@ -1,12 +1,12 @@
 <template>
     <!-- Card Section -->
-<div class="max-w-4xl  py-10  mx-auto"><!-- Card -->
-  <div class="bg-white  p-4 sm:p-7 dark:bg-neutral-800">
+<div class="  py-10  mx-auto"><!-- Card -->
+  <div class="bg-white  p-4 sm:p-7 dark:bg-black">
     <div class="mb-8">
-      <h2 class="text-xl font-bold text-gray-800 dark:text-neutral-200">
+      <h2 class="text-xl font-bold text-gray-800 dark:text-white">
         Profile
       </h2>
-      <p class="text-sm text-gray-600 dark:text-neutral-400">
+      <p class="text-sm text-gray-600 dark:text-white">
         Manage your name, password and account settings.
       </p>
     </div>
@@ -15,7 +15,7 @@
       <!-- Grid -->
       <div class="grid sm:grid-cols-12 gap-2 sm:gap-6">
         <div class="sm:col-span-3">
-          <label class="inline-block text-sm text-gray-800 mt-2.5 dark:text-neutral-200">
+          <label class="inline-block text-sm text-gray-800 mt-2.5 dark:text-white">
             Profile photo
           </label>
         </div>

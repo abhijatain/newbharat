@@ -10,15 +10,13 @@ import { PostCard } from '#build/components';
                 <ProfileStats />
                 <h3>Posts</h3>
                 <div class="flex flex-col gap-3">
-                <PostCard class="shadow-lg"/>
-                <PostCard class="shadow-lg"/>
-                <PostCard class="shadow-lg"/>
-                <PostCard class="shadow-lg"/>
+                <DiscussionsCard2 class="shadow-lg dark:shadow-blue-800/50"/>
+                <DiscussionsCard2 class="shadow-lg dark:shadow-blue-800/50"/>
+                <DiscussionsCard2 class="shadow-lg dark:shadow-blue-800/50"/>
+                <DiscussionsCard2 class="shadow-lg dark:shadow-blue-800/50"/>
             </div>
             </TabPanel>
-            <TabPanel header="Badges">
-                <ProfileStats2 />>
-            </TabPanel>
+            
             <TabPanel header="Edit Profile">
                 <ProfileForm />
             </TabPanel>
