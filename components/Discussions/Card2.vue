@@ -54,7 +54,7 @@
        
        
       
-        <div class="flex flex-row justify-center gap-2 w-full md:w-40">
+        <div class="flex flex-row  gap-2 w-full md:w-40">
             <div class="md:block flex flex-row my-2 px-1 border rounded-lg text-xs items-center">
                <p class="p-1 font-bold text-xs md:text-center">
                    235
