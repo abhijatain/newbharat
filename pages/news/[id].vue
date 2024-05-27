@@ -11,14 +11,14 @@
 <script setup>
 const route = useRoute()
 
-const { data: articles } = await useLazyFetch(`https://test-am3oxfhvvq-em.a.run.app/api/article/${route.params.id}`)
+const { data: articles } = await useFetch(`https://test-am3oxfhvvq-em.a.run.app/api/article/${route.params.id}`)
 
 useSeoMeta({
   title: articles.value[0].title,
-  ogTitle: 'My Amazing Site',
+  ogTitle: articles.value[0].title,
   description: articles.value[0].summary,
   ogDescription: 'This is my amazing site, let me tell you all about it.',
-  ogImage: 'https://example.com/image.png',
+  ogImage: articles.value[0].youtube,
   twitterCard: 'summary_large_image',
 })
 </script>
