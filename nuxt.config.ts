@@ -6,11 +6,11 @@ export default defineNuxtConfig({
     // Homepage pre-rendered at build time
     '/': { prerender: true },
     // Products page generated on demand, revalidates in background, cached until API response changes
-    '/news': { swr: true },
+    '/news': { ssr: true },
     // Product page generated on demand, revalidates in background, cached for 1 hour (3600 seconds)
     '/news/**': { ssr:true },
     // Blog posts page generated on demand, revalidates in background, cached on CDN for 1 hour (3600 seconds)
-    '/discussions': { isr: true },
+    '/discussions': { ssr: true },
     // Blog post page generated on demand once until next deployment, cached on CDN
     '/discussions/**': { ssr: true },
     // Admin dashboard renders only on client-side
