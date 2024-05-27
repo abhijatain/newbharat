@@ -19,7 +19,7 @@ useSeoMeta({
   description: articles.value[2].summary,
   ogDescription: 'This is my amazing site, let me tell you all about it.',
   ogImage: articles.value[2].youtube,
-  ogVideo: articles.value[2].youtube,
+
   twitterCard: 'summary_large_image',
 })
 </script>
