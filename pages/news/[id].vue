@@ -14,11 +14,12 @@ const route = useRoute()
 const { data: articles } = await useFetch(`https://test-am3oxfhvvq-em.a.run.app/api/article/${route.params.id}`)
 
 useSeoMeta({
-  title: articles.value[0].title,
-  ogTitle: articles.value[0].title,
-  description: articles.value[0].summary,
+  title: articles.value[2].title,
+  ogTitle: articles.value[2].title,
+  description: articles.value[2].summary,
   ogDescription: 'This is my amazing site, let me tell you all about it.',
-  ogVideo: articles.value[0].youtube,
+  ogImage: articles.value[2].youtube,
+  ogVideo: articles.value[2].youtube,
   twitterCard: 'summary_large_image',
 })
 </script>
