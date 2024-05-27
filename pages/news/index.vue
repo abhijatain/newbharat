@@ -5,10 +5,12 @@
         <img class="object-cover w-full rounded-lg h-40 md:h-60 lg:h-full lg:w-[30%]" v-if="isImageLink(article.youtube)" :src="article.youtube" >
         <iframe v-else class="object-cover w-full rounded-lg h-40 md:h-60 lg:h-full lg:w-[30%]"  :src="article.youtube" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div class="flex flex-col gap-4 p-2 leading-normal w-full">
+            <NuxtLink :to="{ name: 'news-id', params: { id: article.id } }"  >
             
-            <h5 class=" text-xl items-center font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 class=" text-xl items-center font-bold tracking-tight text-gray-900 dark:text-white hover:text-blue-400 dark:hover:text-blue-400">
                 {{article.title}}.{{ article.title }}
             </h5>
+            </NuxtLink>
         <div>
 
         <span class="bg-red-100 text-red-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">Canada</span>
