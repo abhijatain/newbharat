@@ -15,9 +15,10 @@ const { data: articles } = await useFetch(`https://test-am3oxfhvvq-em.a.run.app/
 
 useSeoMeta({
   title: articles.value[2].title,
+  ogUrl:`https://bharatguild.netlify.app/news/${route.params.id}`,
   ogTitle: articles.value[2].title,
   description: articles.value[2].summary,
-  ogDescription: 'This is my amazing site, let me tell you all about it.',
+  ogDescription: articles.value[2].summary,
   ogImage: articles.value[2].youtube,
 
   twitterCard: 'summary_large_image',
