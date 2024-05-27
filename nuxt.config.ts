@@ -2,6 +2,21 @@
 import path from 'path'
 
 export default defineNuxtConfig({
+  routeRules: {
+    // Homepage pre-rendered at build time
+    '/': { prerender: true },
+    // Products page generated on demand, revalidates in background, cached until API response changes
+    '/news': { swr: true },
+    // Product page generated on demand, revalidates in background, cached for 1 hour (3600 seconds)
+    '/news/**': { ssr:true },
+    // Blog posts page generated on demand, revalidates in background, cached on CDN for 1 hour (3600 seconds)
+    '/discussions': { isr: 3600 },
+    // Blog post page generated on demand once until next deployment, cached on CDN
+    '/discussions/**': { isr: true },
+    // Admin dashboard renders only on client-side
+    '/profile': { ssr: false },
+    
+  },
   router:{
     linkExactActiveClass: 'active'
   },
