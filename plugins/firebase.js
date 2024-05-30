@@ -3,13 +3,13 @@ import { initializeApp } from 'firebase/app'
 import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
 
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API_KEY,
-  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.FIREBASE_PROJECT_ID,
-  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.FIREBASE_APP_ID,
-  measurementId: process.env.FIREBASE_MEASUREMENT_ID,
+    apiKey: "AIzaSyDDvzYMAuIceDytcmOZ6Bf28MtjrEFcOjk",
+    authDomain: "bharat-guild-f02d0.firebaseapp.com",
+    projectId: "bharat-guild-f02d0",
+    storageBucket: "bharat-guild-f02d0.appspot.com",
+    messagingSenderId: "724548591779",
+    appId: "1:724548591779:web:da77bee042632d34f71f16",
+    measurementId: "G-H9XNY6PEY3"
   };
 
   const app = initializeApp(firebaseConfig)
