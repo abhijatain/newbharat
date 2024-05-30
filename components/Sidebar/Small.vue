@@ -13,11 +13,11 @@
                         </span>
                     </div>
          <NavItems />
-                    <div class="mt-auto">
+                    <div class="mt-auto" v-if="nameData">
                         <hr class="mb-3 mx-3 border-t-1 border-none border-surface-200 dark:border-surface-700" />
                         <a v-ripple class="m-3 flex items-center cursor-pointer p-3 gap-2 rounded-md text-surface-700 dark:text-surface-0/80 hover:bg-surface-100 dark:hover:bg-surface-700 duration-200 transition-colors">
-                            <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" shape="circle" />
-                            <span class="font-bold">Amy Elsner</span>
+                            <Avatar :image="imageData" shape="circle" />
+                            <span class="font-bold">{{nameData}}</span>
                         </a>
                     </div>
                 </div>
@@ -28,7 +28,19 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-
 const visible = ref(false);
+
+const imageData = ref(null)
+const nameData = ref(null)
+
+onMounted(() => {
+  if (process.client) {
+    const storedImage = localStorage.getItem('image')
+    const storedName = localStorage.getItem('name')
+    if (storedImage) {
+      imageData.value = storedImage
+      nameData.value = storedName
+    }
+  }
+})
 </script>
