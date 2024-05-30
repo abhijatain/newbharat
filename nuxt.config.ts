@@ -2,6 +2,7 @@
 import path from 'path'
 
 export default defineNuxtConfig({
+  plugins: ['~/plugins/firebase.js'],
   routeRules: {
     // Homepage pre-rendered at build time
     '/': { prerender: true },
@@ -25,8 +26,14 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   modules: [
-    '@nuxtjs/tailwindcss','@vueuse/nuxt','nuxt-primevue'
+    '@nuxtjs/tailwindcss',
+    '@vueuse/nuxt',
+    'nuxt-primevue',
+    "nuxt-tiptap-editor"
   ],
+  tiptap: {
+    prefix: "Tiptap", //prefix for Tiptap imports, composables not included
+  },
   primevue: {
     options: {
       unstyled: true
