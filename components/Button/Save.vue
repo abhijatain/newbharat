@@ -1,4 +1,7 @@
 <template>
+  <div>
+
+  
 <label class="ui-bookmark">
     <input type="checkbox">
     <div class="bookmark">
@@ -9,6 +12,7 @@
       </svg>
     </div>
   </label>
+</div>
 </template>
 
 <style scoped>
