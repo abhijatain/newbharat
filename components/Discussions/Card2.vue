@@ -5,9 +5,11 @@
                     <img class="rounded-xl h-8 md:h-12 " src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Jese image">
                 <p class="justify-start text-xs md:hidden w-full "><span class="font-bold">abhijatain</span> <br> May 12, 2024</p>
                 </div>
-                <div>
-                    <Button icon="pi pi-bookmark" severity="secondary" text rounded aria-label="Bookmark" />
+                <div class="flex flex-row gap-4">
+                    
                     <Button icon="pi pi-share-alt" severity="secondary" text rounded aria-label="Share" />
+                    <ButtonLike class="my-auto"/>
+                    <ButtonSave class="my-auto"/>
                 </div>
 
         </div>
@@ -71,7 +73,7 @@
                    Views
                </p>  
            </div>
-        
+           
            
        </div>
      
