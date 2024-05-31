@@ -1,4 +1,4 @@
 <template>  
     <NavItems />
-    <PreviewTopUsers />
+    
 </template>

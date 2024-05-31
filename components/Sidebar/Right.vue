@@ -1,6 +1,7 @@
 
 import { LoginCard } from '#build/components';
 <template>
+    <PreviewTopUsers />
     <PreviewTopThreads class="mb-2">
      Top Threads
     </PreviewTopThreads>
