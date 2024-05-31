@@ -284,7 +284,7 @@
 
 .scene {
   display: flex;
-  margin: 0 auto 80px auto;
+  margin: auto auto;
   justify-content: center;
   align-items: flex-end;
   width: 400px;

@@ -1,12 +1,30 @@
+
+import { Loader } from '#build/components';
 <template>
   
-  <div class="dark:bg-black">
+  <div class="dark:bg-black h-screen">
    
-    <NuxtLayout>
+   <div v-if="loading" class="h-full">
+    <Loader  class="my-auto"/>
+   </div>
+   <NuxtLayout  >
       <NuxtPage />
     </NuxtLayout>
   </div>
 </template>
+
+<script setup>
+const nuxtApp = useNuxtApp();
+const loading = ref(true); // Start with loading set to true
+
+nuxtApp.hook("page:start", () => {
+  loading.value = true;
+});
+nuxtApp.hook("page:finish", () => {
+  console.log('w')
+  loading.value = false;
+});
+</script>
 
 <style>
 @import url('~/assets/base.css');
