@@ -2,7 +2,7 @@
 import { Loader } from '#build/components';
 <template>
   
-  <div class="dark:bg-black h-screen">
+  <div class="dark:bg-black ">
    
    <div v-if="loading" class="h-full">
     <Loader  class="my-auto"/>
