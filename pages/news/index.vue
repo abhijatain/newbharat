@@ -26,10 +26,11 @@
                 <div class="my-auto">
                     <p >Tribune . 14 hrs</p>
                 </div>
-                <div>
-
-                    <Button icon="pi pi-bookmark" severity="secondary" text rounded aria-label="Bookmark" />
+                <div class="flex flex-row gap-4">
+                    
                     <Button icon="pi pi-share-alt" severity="secondary" text rounded aria-label="Share" />
+                    <ButtonLike class="my-auto"/>
+                    <ButtonSave class="my-auto"/>
                 </div>
             </div>
         </div>

@@ -5,7 +5,7 @@ import { Loader } from '#build/components';
   <div class="dark:bg-black ">
    
    <div v-if="loading" class="h-full">
-    <Loader  class="my-auto"/>
+    <Loader4  class="my-auto mx-auto"/>
    </div>
    <NuxtLayout  >
       <NuxtPage />
