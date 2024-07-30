@@ -5,7 +5,7 @@
         <div class="flex flex-row gap-4 my-auto text-start">
           <img class="rounded-xl h-8 md:h-12" src="https://planetabled.com/wp-content/uploads/2019/07/The-Hindu-Logo.jpg" alt="Article logo">
           <p class="justify-start text-xs w-full">
-            <span class="font-bold">{{ article.source }}</span>
+            <span class="font-bold ">{{ article.source }}</span>
             <br> {{ article.date }}
           </p>
         </div>
@@ -21,6 +21,7 @@
         <h1 class="mb-1 merriweather-bold text-xl">
           {{ article.title }}
         </h1>
+        
       </div>
   
       <!-- Progress Bars and Icons -->
@@ -80,7 +81,17 @@
   </script>
   
   <style scoped>
-  /* Scoped styles if needed */
+ .merriweather-bold {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
   </style>
   
   
