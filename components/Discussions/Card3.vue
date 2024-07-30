@@ -59,14 +59,35 @@
     <div class="bg-[#035397] text-xs font-medium text-white text-center p-0.5 leading-none rounded-full dark:bg-[#035397]" style="width: 90%">Author tone is Left 90%</div>
   </div>
   -->
-  <ProgressBar :value="85" color="#035397" lean="Left" text="Article Content Leans left 85%"/>
-  <ProgressBar :value="65" color="#E8630A" lean="Right" text="Article Content Leans right 65%"/>
-  <div class="card md:flex justify-around gap-4 items-center hidden ">
-    <Knob v-model="value1" valueTemplate="{value}%" :size="70"/>
-    <Knob v-model="value2" valueTemplate="{value}%" :size="70" rangeColor="MediumTurquoise"/>
-    
+  <div class="flex w-full gap-2">
+    <ProgressBar :value="85" color="#035397" lean="Left" text="Topic covers left views"/>
+    <div class="card flex justify-center">
+         <i class="pi pi-question-circle" style="color: #708090" @click="visible = true"></i>
+        
+        <Dialog v-model:visible="visible" modal header="Topic Lean Reason" :style="{ width: '25rem' }">
+
+            <div class="flex items-center gap-4 mb-2 mt-1">
+                The article reports on a political development and an interview with a BJP MP, presenting his views and demands in a neutral and factual manner
+            </div>
+            
+        </Dialog>
     </div>
-    
+  </div>
+  <div class="flex w-full gap-2">
+  <ProgressBar :value="65" color="#E8630A" lean="Right" text="Author view's are Right"/>
+  
+    <div class="card flex justify-center">
+         <i class="pi pi-question-circle" style="color: #708090" @click="visible2 = true"></i>
+        
+        <Dialog v-model:visible="visible2" modal header="Editor Lean Reason" :style="{ width: '25rem' }">
+            
+            <div class="flex items-center gap-4 mb-4">
+                The article does not appear to support or criticize any political party or ideology, but presents the views of a BJP MP and the reaction of the BSP chief, providing a balanced perspective.
+            </div>
+            
+        </Dialog>
+    </div>
+</div>
   
 
 
@@ -98,8 +119,8 @@
 
 <script setup>
 
-const value1 = ref(70);
-const value2 = ref(80);
+const visible = ref(false);
+const visible2 = ref(false);
 </script>
 
 <style scoped>
