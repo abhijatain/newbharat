@@ -21,7 +21,7 @@
 
             </div>
             <div class="flex flex-row md:flex-col w-full md:w-20 rounded-lg p-2 justify-center gap-3 bg-gray-100 md:gap-1 dark:bg-gray-800" >
-                <p class="text-center text-2xl dark:text-white">+</p>
+                <p class="text-center text-2xl dark:text-white"><i class="pi pi-arrow-circle-up"></i></p>
                 <div class="p-1 border  rounded-lg text-xs text-center dark:text-white">
                     <p class="p-1 font-bold">
                         235
@@ -30,7 +30,7 @@
                         Likes
                     </p>  
                 </div>
-                <p class="text-center text-2xl dark:text-white">-</p>
+                <p class="text-center text-2xl dark:text-white"><i class="pi pi-arrow-circle-down"></i></p>
             </div>
             
         </div>

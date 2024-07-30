@@ -1,9 +1,6 @@
 <template>
     <div class=" container mx-auto flex flex-col gap-3 md:p-6 ">
-      <Loader class="mx-auto mb-5"/>
-      <Loader2 class="mx-auto mb-5"/>
-      <Loader3 class="mx-auto mb-5"/>
-      <Loader4 class="mx-auto"/>
+      
 <TopHeader />
 <!-- Features -->
 <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">

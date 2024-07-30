@@ -11,7 +11,7 @@
         </svg>
     </button>
       <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Bharat Guild</span>
+      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Talk To Ca</span>
   </div>
   <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse gap-4 px-4">
     <DarkMode />
