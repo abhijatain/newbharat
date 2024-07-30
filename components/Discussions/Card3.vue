@@ -15,33 +15,28 @@
         </div>
         
            <div class="block md:hidden">
-               <h1 class=" font-semi-bold mb-1 ">
-                   Best way to have GIF favicon but icon in all browsers. Best way to have GIF favicon but icon in all browsers?
+               <h1 class=" mb-1 ">
+                The real-time translations are provided by the Parliament secretariat’s dedicated cadre of simultaneous interpreters. Streamed translations will be available starting July 29 on YouTube
                </h1>
                
            </div>
      
         <div class="md:flex flex-row gap-3 hidden " >
-            <img class=" h-8 md:h-10 mx-auto rounded-full ring-2 ring-white dark:ring-gray-900 md:inline-block md:my-auto" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="" />
+            <img class="rounded-xl h-8 md:h-12 " src="https://planetabled.com/wp-content/uploads/2019/07/The-Hindu-Logo.jpg" alt="Jese image">
             <div class="">
                 <div class="flex flex-col gap-1 p-2">
                    
                     <div class="flex flex-row justify-between">
-                        <p class=" text-xs mb-2"><span class="font-bold">abhijatain</span> | May 12, 2024</p>
+                        <p class=" text-xs mb-2"><span class="font-bold">The Hindu</span> | May 12, 2024</p>
                         
                     </div>
                     
-                    <div>
-                        <span class="bg-red-100 text-red-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">Canada</span>
-                        <span class="bg-green-100 text-green-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Sports</span>
-                        <span class="bg-yellow-100 text-yellow-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">Football</span>
-                        <span class="bg-indigo-100 text-indigo-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-indigo-900 dark:text-indigo-300">Indigo</span>
-                    </div>
+                    
 
                 </div>
                 
                 <h5 class=" font-bold mb-2 ">
-                    Best way to have GIF favicon but icon in all browsers?Best way to have GIF favicon but icon in all browsers?
+                    The real-time translations are provided by the Parliament secretariat’s dedicated cadre of simultaneous interpreters. Streamed translations will be available starting July 29 on YouTube
                 </h5>
         
             </div>
@@ -54,7 +49,7 @@
            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-gray-900" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
        </div>
     -->
-  <!--
+  
   <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 md:hidden">
     <div class="bg-[#E8630A] text-xs font-medium text-white text-center p-0.5 leading-none rounded-full dark:bg-[#E8630A]" style="width: 70%">Article content is Right 70%</div>
   </div>
@@ -62,12 +57,8 @@
   <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 md:hidden">
     <div class="bg-[#035397] text-xs font-medium text-white text-center p-0.5 leading-none rounded-full dark:bg-[#035397]" style="width: 90%">Author tone is Left 90%</div>
   </div>
--->
-  <div class="card flex justify-around gap-4 items-center">
-    <span class="text-center ">
-       1. Content Leans Left<br>
-       2. Author Leans Right
-    </span>
+
+  <div class="card md:flex justify-around gap-4 items-center hidden ">
     <Knob v-model="value1" valueTemplate="{value}%" :size="70"/>
     <Knob v-model="value2" valueTemplate="{value}%" :size="70" rangeColor="MediumTurquoise"/>
     
