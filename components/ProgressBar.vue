@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 md:hidden h-[16px]">
+    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700  h-[16px]">
       <div
         :class="[
           'text-xs font-medium text-white text-center p-0.5 leading-none rounded-full h-[16px]',
