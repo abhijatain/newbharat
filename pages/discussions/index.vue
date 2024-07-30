@@ -25,7 +25,7 @@ const articles = ref([
     replies: 310,
     views: '320K',
     topicColor: '#035397', // Left
-    authorColor: '#FFFFFF' // Center
+    authorColor: '#90EE90' // Light Green (Center)
   },
   {
     title: "Rahul Gandhi Criticizes Modi’s Recent Financial Reforms",
@@ -54,8 +54,8 @@ const articles = ref([
     authorLeanReason: 'The author maintains a neutral stance while analyzing economic policies.',
     replies: 220,
     views: '275K',
-    topicColor: '#FFFFFF', // Center
-    authorColor: '#FFFFFF' // Center
+    topicColor: '#90EE90', // Light Green (Center)
+    authorColor: '#90EE90' // Light Green (Center)
   },
   {
     title: "BJP's Economic Strategy: A Critical Review",
@@ -70,7 +70,7 @@ const articles = ref([
     replies: 180,
     views: '250K',
     topicColor: '#035397', // Left
-    authorColor: '#FFFFFF' // Center
+    authorColor: '#90EE90' // Light Green (Center)
   },
   {
     title: "Public Sector Banks and Modi’s Financial Policies: An Overview",
@@ -84,8 +84,8 @@ const articles = ref([
     authorLeanReason: 'The author’s views are more centered but offer a critical perspective on financial policies.',
     replies: 195,
     views: '260K',
-    topicColor: '#FFFFFF', // Center
-    authorColor: '#FFFFFF' // Center
+    topicColor: '#90EE90', // Light Green (Center)
+    authorColor: '#90EE90' // Light Green (Center)
   },
   {
     title: "The Role of Public Sector Banks in Modi’s Economic Vision",
@@ -99,7 +99,7 @@ const articles = ref([
     authorLeanReason: 'The author’s views lean towards the right, providing a supportive analysis.',
     replies: 140,
     views: '210K',
-    topicColor: '#FFFFFF', // Center
+    topicColor: '#90EE90', // Light Green (Center)
     authorColor: '#E8630A' // Right
   },
   {
@@ -115,7 +115,7 @@ const articles = ref([
     replies: 250,
     views: '290K',
     topicColor: '#E8630A', // Right
-    authorColor: '#FFFFFF' // Center
+    authorColor: '#90EE90' // Light Green (Center)
   },
   {
     title: "Modi’s Financial Reforms and Their Impact on the Economy",
@@ -130,7 +130,7 @@ const articles = ref([
     replies: 230,
     views: '280K',
     topicColor: '#035397', // Left
-    authorColor: '#FFFFFF' // Center
+    authorColor: '#90EE90' // Light Green (Center)
   },
   {
     title: "Rahul Gandhi’s View on Modi’s Economic Reforms",
@@ -145,7 +145,7 @@ const articles = ref([
     replies: 160,
     views: '225K',
     topicColor: '#035397', // Left
-    authorColor: '#FFFFFF' // Center
+    authorColor: '#90EE90' // Light Green (Center)
   },
   {
     title: "Economic Policies Under Modi: A Comprehensive Review",
@@ -159,8 +159,8 @@ const articles = ref([
     authorLeanReason: 'The author presents a balanced view with a focus on the effectiveness of the policies.',
     replies: 210,
     views: '270K',
-    topicColor: '#FFFFFF', // Center
-    authorColor: '#FFFFFF' // Center
+    topicColor: '#90EE90', // Light Green (Center)
+    authorColor: '#90EE90' // Light Green (Center)
   },
   {
     title: "The Impact of Financial Reforms on Public Sector Banks",
@@ -174,8 +174,8 @@ const articles = ref([
     authorLeanReason: 'The author provides a balanced perspective with a critical analysis of the reforms.',
     replies: 190,
     views: '265K',
-    topicColor: '#FFFFFF', // Center
-    authorColor: '#FFFFFF' // Center
+    topicColor: '#90EE90', // Light Green (Center)
+    authorColor: '#90EE90' // Light Green (Center)
   },
   {
     title: "Public Sector Banks and Economic Reforms: A Balanced Analysis",
@@ -190,9 +190,10 @@ const articles = ref([
     replies: 200,
     views: '275K',
     topicColor: '#035397', // Left
-    authorColor: '#FFFFFF' // Center
+    authorColor: '#90EE90' // Light Green (Center)
   },
 ]);
+
 
 
 
