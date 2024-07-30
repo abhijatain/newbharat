@@ -18,13 +18,7 @@
                <h5 class=" font-bold mb-1 ">
                    Best way to have GIF favicon but icon in all browsers. Best way to have GIF favicon but icon in all browsers?
                </h5>
-               <div>
-                <span class="bg-red-100 text-red-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">Canada</span>
-                <span class="bg-green-100 text-green-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Sports</span>
-                <span class="bg-yellow-100 text-yellow-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">Football</span>
-                <span class="bg-indigo-100 text-indigo-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-indigo-900 dark:text-indigo-300">Indigo</span>
-
-                </div>
+               
            </div>
      
         <div class="md:flex flex-row gap-3 hidden " >
