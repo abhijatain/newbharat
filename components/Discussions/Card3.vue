@@ -54,7 +54,7 @@
            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-gray-900" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
        </div>
     -->
-
+  <!--
   <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 md:hidden">
     <div class="bg-[#E8630A] text-xs font-medium text-white text-center p-0.5 leading-none rounded-full dark:bg-[#E8630A]" style="width: 70%">Article content is Right 70%</div>
   </div>
@@ -62,8 +62,22 @@
   <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 md:hidden">
     <div class="bg-[#035397] text-xs font-medium text-white text-center p-0.5 leading-none rounded-full dark:bg-[#035397]" style="width: 90%">Author tone is Left 90%</div>
   </div>
+-->
+  <div class="card flex justify-around gap-4 items-center">
+    <span class="text-center ">
+       1. Content Leans Left<br>
+       2. Author Leans Right
+    </span>
+    <Knob v-model="value1" valueTemplate="{value}%" :size="70"/>
+    <Knob v-model="value2" valueTemplate="{value}%" :size="70" rangeColor="MediumTurquoise"/>
+    
+    </div>
+    
+  
 
 
+       
+      
         <div class="flex flex-row  gap-2 w-full md:w-40">
             <div class="md:block flex flex-row my-2 px-1 border rounded-lg text-xs items-center">
                <p class="p-1 font-bold text-xs md:text-center">
@@ -88,3 +102,8 @@
      </div>
 </template>
 
+<script setup>
+
+const value1 = ref(70);
+const value2 = ref(80);
+</script>
