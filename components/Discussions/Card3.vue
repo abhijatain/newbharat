@@ -62,7 +62,7 @@
   <div class="flex w-full gap-2">
     <ProgressBar :value="85" color="#035397" lean="Left" text="Topic covers left views"/>
     <div class="card flex justify-center">
-         <i class="pi pi-question-circle" style="color: #708090" @click="visible = true"></i>
+         <i class="pi pi-question-circle"  @click="visible = true"></i>
         
         <Dialog v-model:visible="visible" modal header="Topic Lean Reason" :style="{ width: '25rem' }">
 
@@ -77,7 +77,7 @@
   <ProgressBar :value="65" color="#E8630A" lean="Right" text="Author view's are Right"/>
   
     <div class="card flex justify-center">
-         <i class="pi pi-question-circle" style="color: #708090" @click="visible2 = true"></i>
+         <i class="pi pi-question-circle"  @click="visible2 = true"></i>
         
         <Dialog v-model:visible="visible2" modal header="Editor Lean Reason" :style="{ width: '25rem' }">
             
