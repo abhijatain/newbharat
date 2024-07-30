@@ -15,8 +15,9 @@
         </div>
         
            <div class="block md:hidden">
-               <h1 class=" mb-1 ">
-                The real-time translations are provided by the Parliament secretariat’s dedicated cadre of simultaneous interpreters. Streamed translations will be available starting July 29 on YouTube
+               <h1 class=" mb-1 merriweather-bold text-xl">
+                People will break Modi's 'chakravyuh': Rahul Gandhi on PSBs collecting crores as penalty
+
                </h1>
                
            </div>
@@ -35,13 +36,13 @@
 
                 </div>
                 
-                <h5 class=" font-bold mb-2 ">
-                    The real-time translations are provided by the Parliament secretariat’s dedicated cadre of simultaneous interpreters. Streamed translations will be available starting July 29 on YouTube
+                <h5 class=" mb-2 merriweather-bold text-xl ">
+                    People will break Modi's 'chakravyuh': Rahul Gandhi on PSBs collecting crores as penalty
                 </h5>
         
             </div>
         </div>
-        <!--
+        
        <div class="md:flex -space-x-1 overflow-hidden hidden w-40">
            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-gray-900" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-gray-900" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
@@ -49,14 +50,15 @@
            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-gray-900" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
        </div>
     
-  
+  <!-- 
   <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 md:hidden">
     <div class="bg-[#E8630A] text-xs font-medium text-white text-center p-0.5 leading-none rounded-full dark:bg-[#E8630A]" style="width: 70%">Article content is Right 70%</div>
   </div>
 
   <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 md:hidden">
     <div class="bg-[#035397] text-xs font-medium text-white text-center p-0.5 leading-none rounded-full dark:bg-[#035397]" style="width: 90%">Author tone is Left 90%</div>
-  </div>-->
+  </div>
+  -->
   <ProgressBar :value="85" color="#035397" lean="Left" text="Article Content Leans left 85%"/>
   <ProgressBar :value="65" color="#E8630A" lean="Right" text="Article Content Leans right 65%"/>
   <div class="card md:flex justify-around gap-4 items-center hidden ">
@@ -99,3 +101,55 @@
 const value1 = ref(70);
 const value2 = ref(80);
 </script>
+
+<style scoped>
+.merriweather-light {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.merriweather-bold {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.merriweather-black {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.merriweather-light-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.merriweather-regular-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.merriweather-bold-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.merriweather-black-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+</style>
