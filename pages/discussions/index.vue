@@ -1,12 +1,8 @@
 <template>
     
     <div class=" container mx-auto flex flex-col md:grid md:grid-cols-2 gap-2 md:p-6 ">
-        <DiscussionsCard4 v-for="(article, index) in articles" :key="index" :article="article" class="shadow-lg dark:shadow-blue-800/50 shadow-blue-500/50"/>
-        
-   
- 
-    
-</div>
+        <DiscussionsCard4 v-for="(article, index) in articles" :key="index" :article="article" class="shadow-lg dark:shadow-blue-800/50 shadow-blue-500/50"/>   
+    </div>
 </template>
 
 <script setup>
@@ -25,7 +21,9 @@ const articles = ref([
     replies: 310,
     views: '320K',
     topicColor: '#035397', // Left
-    authorColor: '#90EE90' // Light Green (Center)
+    authorColor: '#399918', // Light Green (Center)
+    topicLeanValue: 'left',
+    authorLeanValue: 'center'
   },
   {
     title: "Rahul Gandhi Criticizes Modi’s Recent Financial Reforms",
@@ -40,7 +38,9 @@ const articles = ref([
     replies: 150,
     views: '200K',
     topicColor: '#035397', // Left
-    authorColor: '#035397' // Left
+    authorColor: '#035397', // Left
+    topicLeanValue: 'left',
+    authorLeanValue: 'left'
   },
   {
     title: "Impact of Modi’s Economic Policies on the Banking Sector",
@@ -54,8 +54,10 @@ const articles = ref([
     authorLeanReason: 'The author maintains a neutral stance while analyzing economic policies.',
     replies: 220,
     views: '275K',
-    topicColor: '#90EE90', // Light Green (Center)
-    authorColor: '#90EE90' // Light Green (Center)
+    topicColor: '#399918', // Light Green (Center)
+    authorColor: '#399918', // Light Green (Center)
+    topicLeanValue: 'center',
+    authorLeanValue: 'center'
   },
   {
     title: "BJP's Economic Strategy: A Critical Review",
@@ -66,11 +68,13 @@ const articles = ref([
     topicLeanText: 'Topic covers left views',
     authorLeanText: "Author views are center",
     topicLeanReason: 'The article critically reviews the BJP’s economic strategy, suggesting left-leaning implications.',
-    authorLeanReason: 'The author provides a critical view but maintains a balanced tone.',
+    authorLeanReason: 'The author’s views are more centered but offer a critical perspective.',
     replies: 180,
     views: '250K',
     topicColor: '#035397', // Left
-    authorColor: '#90EE90' // Light Green (Center)
+    authorColor: '#399918', // Light Green (Center)
+    topicLeanValue: 'left',
+    authorLeanValue: 'center'
   },
   {
     title: "Public Sector Banks and Modi’s Financial Policies: An Overview",
@@ -81,11 +85,13 @@ const articles = ref([
     topicLeanText: 'Topic covers center-left views',
     authorLeanText: "Author views are center",
     topicLeanReason: 'The article discusses the financial policies with a focus on public sector banks, adopting a center-left approach.',
-    authorLeanReason: 'The author’s views are more centered but offer a critical perspective on financial policies.',
+    authorLeanReason: 'The author’s views are more centered but provide a critical analysis of financial policies.',
     replies: 195,
     views: '260K',
-    topicColor: '#90EE90', // Light Green (Center)
-    authorColor: '#90EE90' // Light Green (Center)
+    topicColor: '#399918', // Light Green (Center)
+    authorColor: '#399918', // Light Green (Center)
+    topicLeanValue: 'center-left',
+    authorLeanValue: 'center'
   },
   {
     title: "The Role of Public Sector Banks in Modi’s Economic Vision",
@@ -99,8 +105,10 @@ const articles = ref([
     authorLeanReason: 'The author’s views lean towards the right, providing a supportive analysis.',
     replies: 140,
     views: '210K',
-    topicColor: '#90EE90', // Light Green (Center)
-    authorColor: '#E8630A' // Right
+    topicColor: '#399918', // Light Green (Center)
+    authorColor: '#E8630A', // Right
+    topicLeanValue: 'center',
+    authorLeanValue: 'right'
   },
   {
     title: "Analyzing the Effectiveness of Modi’s Economic Policies",
@@ -115,7 +123,9 @@ const articles = ref([
     replies: 250,
     views: '290K',
     topicColor: '#E8630A', // Right
-    authorColor: '#90EE90' // Light Green (Center)
+    authorColor: '#399918', // Light Green (Center)
+    topicLeanValue: 'right',
+    authorLeanValue: 'center'
   },
   {
     title: "Modi’s Financial Reforms and Their Impact on the Economy",
@@ -130,7 +140,9 @@ const articles = ref([
     replies: 230,
     views: '280K',
     topicColor: '#035397', // Left
-    authorColor: '#90EE90' // Light Green (Center)
+    authorColor: '#399918', // Light Green (Center)
+    topicLeanValue: 'left',
+    authorLeanValue: 'center'
   },
   {
     title: "Rahul Gandhi’s View on Modi’s Economic Reforms",
@@ -145,7 +157,9 @@ const articles = ref([
     replies: 160,
     views: '225K',
     topicColor: '#035397', // Left
-    authorColor: '#90EE90' // Light Green (Center)
+    authorColor: '#399918', // Light Green (Center)
+    topicLeanValue: 'left',
+    authorLeanValue: 'center'
   },
   {
     title: "Economic Policies Under Modi: A Comprehensive Review",
@@ -159,8 +173,10 @@ const articles = ref([
     authorLeanReason: 'The author presents a balanced view with a focus on the effectiveness of the policies.',
     replies: 210,
     views: '270K',
-    topicColor: '#90EE90', // Light Green (Center)
-    authorColor: '#90EE90' // Light Green (Center)
+    topicColor: '#399918', // Light Green (Center)
+    authorColor: '#399918', // Light Green (Center)
+    topicLeanValue: 'center',
+    authorLeanValue: 'center'
   },
   {
     title: "The Impact of Financial Reforms on Public Sector Banks",
@@ -174,8 +190,10 @@ const articles = ref([
     authorLeanReason: 'The author provides a balanced perspective with a critical analysis of the reforms.',
     replies: 190,
     views: '265K',
-    topicColor: '#90EE90', // Light Green (Center)
-    authorColor: '#90EE90' // Light Green (Center)
+    topicColor: '#399918', // Light Green (Center)
+    authorColor: '#399918', // Light Green (Center)
+    topicLeanValue: 'center-left',
+    authorLeanValue: 'center'
   },
   {
     title: "Public Sector Banks and Economic Reforms: A Balanced Analysis",
@@ -190,7 +208,9 @@ const articles = ref([
     replies: 200,
     views: '275K',
     topicColor: '#035397', // Left
-    authorColor: '#90EE90' // Light Green (Center)
+    authorColor: '#399918', // Light Green (Center)
+    topicLeanValue: 'left',
+    authorLeanValue: 'center'
   },
 ]);
 

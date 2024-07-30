@@ -25,7 +25,7 @@
   
       <!-- Progress Bars and Icons -->
       <div class="flex w-full gap-2">
-        <ProgressBar :value="article.topicLean" :color="article.topicColor" lean="Left" :text="article.topicLeanText"/>
+        <ProgressBar :value="article.topicLean" :color="article.topicColor" :lean="article.topicLeanValue" :text="article.topicLeanText"/>
         <div class="card flex justify-center">
           <i class="pi pi-question-circle" @click="visible = true"></i>
           <Dialog v-model:visible="visible" modal header="Topic Lean Reason" :style="{ width: '25rem' }">
@@ -37,7 +37,7 @@
       </div>
   
       <div class="flex w-full gap-2">
-        <ProgressBar :value="article.authorLean" :color="article.authorColor" lean="Right" :text="article.authorLeanText"/>
+        <ProgressBar :value="article.authorLean" :color="article.authorColor" :lean="article.authorLeanValue" :text="article.authorLeanText"/>
         <div class="card flex justify-center">
           <i class="pi pi-question-circle" @click="visible2 = true"></i>
           <Dialog v-model:visible="visible2" modal header="Editor Lean Reason" :style="{ width: '25rem' }">

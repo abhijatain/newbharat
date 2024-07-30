@@ -1,15 +1,14 @@
 <template>
-    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700  h-[16px]">
+    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 h-[16px]">
       <div
         :class="[
-          'text-xs font-medium text-white text-center p-0.5 leading-none rounded-full h-[16px]',
-          `bg-[${color}]`,
+          'text-xs font-medium text-center p-0.5 leading-none rounded-full h-[16px]',
           darkColor ? `dark:bg-[${color}]` : ''
         ]"
         :style="progressStyle"
       >
         <template v-if="animationCompleted">
-          {{ displayText }}
+          <span :style="{ color: textColor }">{{ displayText }}</span>
         </template>
       </div>
     </div>
@@ -43,7 +42,15 @@
   const progressStyle = computed(() => ({
     width: progressWidth.value,
     transition: 'width 2s ease',
+    backgroundColor: props.color, // Set the background color dynamically
   }));
+  
+  const textColor = computed(() => {
+    // Ensure the text color contrasts with the background
+    return '#fff'; // Black color for text, adjust as needed
+  });
+  
+  const displayText = computed(() => props.text);
   
   const animateProgress = () => {
     setTimeout(() => {
@@ -53,10 +60,6 @@
       }, 2000); // Delay to match the animation duration
     }, 100); // Delay to allow the component to render before starting the animation
   };
-  
-  // Determine the dark mode color
-  const darkColor = computed(() => props.color);
-  const displayText = computed(() => props.text);
   
   onMounted(() => {
     animateProgress();
