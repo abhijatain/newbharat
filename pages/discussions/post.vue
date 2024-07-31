@@ -95,11 +95,11 @@
           
         </div>
       
-        <h1>Similar Stories</h1>
+        <UDivider label="Similar Stories" />
         <Carousel :items="items2"/>
-        <h1>Latest</h1>
+        <UDivider label="Latest" />
         <Carousel :items="items3"/>
-        <h1>Popular</h1>
+        <UDivider label="Popular" />
         <Carousel :items="items2"/>
     </div>
 </template>
