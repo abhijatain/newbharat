@@ -3,7 +3,7 @@
 
   
    <div class="flex w-full gap-2">
-    <ProgressBar :value="85" color="#035397" lean="Left" text="Topic covers left views"/>
+    <ProgressBar :value="85" color="#035397" lean="Left" text="Topic covers left views" height="20"/>
     <div class="card flex justify-center">
          <i class="pi pi-question-circle"  @click="visible = true"></i>
         
@@ -17,7 +17,7 @@
     </div>
   </div>
   <div class="flex w-full gap-2">
-  <ProgressBar :value="65" color="#E8630A" lean="Right" text="Author view's are Right"/>
+  <ProgressBar :value="65" color="#E8630A" lean="Right" text="Author view's are Right" height="20"/>
   
     <div class="card flex justify-center">
          <i class="pi pi-question-circle"  @click="visible2 = true"></i>
@@ -76,12 +76,7 @@
             </div>
         </div>
         
-       <div class="md:flex -space-x-1 overflow-hidden hidden w-40">
-           <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-gray-900" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-           <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-gray-900" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-           <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-gray-900" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt="" />
-           <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-gray-900" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-       </div>
+
     
   <!-- 
   <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 md:hidden">
