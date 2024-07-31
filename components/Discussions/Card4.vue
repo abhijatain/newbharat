@@ -18,10 +18,11 @@
   
       <!-- Title -->
       <div>
+        <NuxtLink to="/discussions/post">
         <h1 class="mb-1 merriweather-bold text-xl">
           {{ article.title }}
         </h1>
-        
+    </NuxtLink>
       </div>
   
       <!-- Progress Bars and Icons -->
@@ -72,6 +73,8 @@
   </template>
   
   <script setup>
+
+
   const props = defineProps({
     article: Object
   });

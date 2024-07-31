@@ -1,14 +1,14 @@
 <template>
-    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 h-[16px]">
+    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 h-[20px]">
       <div
         :class="[
-          'text-xs font-medium text-center p-0.5 leading-none rounded-full h-[16px]',
+          'text-xs font-medium text-center p-0.5 leading-none rounded-full h-[20px] my-auto',
           darkColor ? `dark:bg-[${color}]` : ''
         ]"
         :style="progressStyle"
       >
-        <template v-if="animationCompleted">
-          <span :style="{ color: textColor }">{{ displayText }}</span>
+        <template v-if="animationCompleted" >
+          <span :style="{ color: textColor } "  >{{ displayText }}</span>
         </template>
       </div>
     </div>
