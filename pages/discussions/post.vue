@@ -1,5 +1,5 @@
 <template>
-    <div class=" flex flex-col container mx-auto gap-3">
+    <div class="max-w-[700px] flex flex-col container mx-auto gap-3">
    
         <div class=" md:m-2 ">
             <DiscussionsCard3 />
@@ -96,7 +96,7 @@
         </div>
       
         <UDivider label="Similar Stories" />
-        <Carousel :items="items2"/>
+        <Carousel2 :items="items2"/>
         <UDivider label="Latest" />
         <Carousel :items="items3"/>
         <UDivider label="Popular" />
