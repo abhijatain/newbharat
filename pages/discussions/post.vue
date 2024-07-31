@@ -95,13 +95,33 @@
           
         </div>
       
-   
-        <Carousel />
+        <h1>Similar Stories</h1>
+        <Carousel :items="items2"/>
+        <h1>Latest</h1>
+        <Carousel :items="items3"/>
+        <h1>Popular</h1>
+        <Carousel :items="items2"/>
     </div>
 </template>
 
 <script setup>
+const items2 = [
+  'https://picsum.photos/600/800?random=6',
+  'https://picsum.photos/600/800?random=5',
+  'https://picsum.photos/600/800?random=3',
+  'https://picsum.photos/600/800?random=4',
+  'https://picsum.photos/600/800?random=3',
+  'https://picsum.photos/600/800?random=1'
+];
 
+const items3 = [
+  'https://picsum.photos/600/800?random=1',
+  'https://picsum.photos/600/800?random=2',
+  'https://picsum.photos/600/800?random=3',
+  'https://picsum.photos/600/800?random=4',
+  'https://picsum.photos/600/800?random=5',
+  'https://picsum.photos/600/800?random=6'
+];
 
 const ingredient = ref('');
 
