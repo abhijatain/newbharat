@@ -6,23 +6,11 @@ const props = defineProps({
   }
 });
 
-const carouselRef = ref()
 
-onMounted(() => {
-  setInterval(() => {
-    if (!carouselRef.value) return
-
-    if (carouselRef.value.page === carouselRef.value.pages) {
-      return carouselRef.value.select(0)
-    }
-
-    carouselRef.value.next()
-  }, 3000)
-})
 </script>
 
 <template>
-  <UCarousel v-slot="{ item }" :items="items" ref="carouselRef">
+  <UCarousel v-slot="{ item }" :items="items" indicators>
     
 
     <div class="antialiased text-gray-900 " style="width: 300;height: 400;">
@@ -43,7 +31,7 @@ onMounted(() => {
         <div class="flex gap-3 flex-col">
 
   
-<div class="flex gap-2 p-2 flex-col w-[280px]">
+<div class="flex gap-2 p-2 flex-col w-[280px] mb-6">
  <ProgressBar :value="85" color="#E8630A" lean="Right" text="" height="6"/>
  <ProgressBar :value="65" color="#399918" lean="Center" text="" height="6"/>
 </div>

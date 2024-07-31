@@ -1,6 +1,7 @@
 <template>
     
     <div class=" container mx-auto flex flex-col md:grid md:grid-cols-2 gap-2 md:p-6 ">
+      <UDivider label="Latest" />
       <Carousel :items="items" class="border-b mb-3 dark:border-blue-800/50"/>
       <UDivider label="Feed" />
         <DiscussionsCard4 v-for="(article, index) in articles" :key="index" :article="article" class="shadow-lg dark:shadow-blue-800/50 shadow-blue-500/50"/>   
