@@ -96,11 +96,13 @@
         </div>
       
    
-
+        <Carousel />
     </div>
 </template>
 
 <script setup>
+
+
 const ingredient = ref('');
 
 const items = [{
