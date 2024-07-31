@@ -45,9 +45,9 @@ onMounted(() => {
         <div class="flex gap-3 flex-col">
 
   
-<div class="flex w-full gap-2 p-2">
- <ProgressBar :value="85" color="#E8630A" lean="Right" text="" height="8"/>
- <ProgressBar :value="65" color="#399918" lean="Center" text="" height="8"/>
+<div class="flex w-full gap-2 p-2 flex-col">
+ <ProgressBar :value="85" color="#E8630A" lean="Right" text="" height="6"/>
+ <ProgressBar :value="65" color="#399918" lean="Center" text="" height="6"/>
 </div>
 
 </div>
